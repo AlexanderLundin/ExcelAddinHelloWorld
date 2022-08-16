@@ -58,13 +58,15 @@
             // 
             // button1
             // 
-            this.button1.Label = "button1";
+            this.button1.Label = "Write Hello World to cell";
             this.button1.Name = "button1";
+            this.button1.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Label = "button2";
+            this.button2.Label = "MessageBox Hello World";
             this.button2.Name = "button2";
+            this.button2.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.button2_Click);
             // 
             // Ribbon1
             // 
