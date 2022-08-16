@@ -19,6 +19,11 @@ namespace ExcelAddInHelloWorld
         {
         }
 
+        public Excel.Worksheet GetActiveWorksheet()
+        {
+            return (Excel.Worksheet)Application.ActiveSheet;
+        }
+
         #region VSTO generated code
 
         /// <summary>
