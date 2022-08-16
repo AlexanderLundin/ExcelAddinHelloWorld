@@ -34,18 +34,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tab1 = Factory.CreateRibbonTab();
-            this.group1 = Factory.CreateRibbonGroup();
+            this.tab1 = this.Factory.CreateRibbonTab();
+            this.group1 = this.Factory.CreateRibbonGroup();
             this.tab1.SuspendLayout();
-            this.group1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tab1
             // 
-            this.tab1.Name = "tab1";
             this.tab1.ControlId.ControlIdType = Microsoft.Office.Tools.Ribbon.RibbonControlIdType.Office;
-            this.tab1.ControlId.OfficeId = "TabAddIns";
             this.tab1.Groups.Add(this.group1);
+            this.tab1.Label = "TabAddIns";
+            this.tab1.Name = "tab1";
             // 
             // group1
             // 
@@ -60,8 +59,6 @@
             this.Load += new Microsoft.Office.Tools.Ribbon.RibbonUIEventHandler(this.Ribbon1_Load);
             this.tab1.ResumeLayout(false);
             this.tab1.PerformLayout();
-            this.group1.ResumeLayout(false);
-            this.group1.PerformLayout();
             this.ResumeLayout(false);
 
         }
